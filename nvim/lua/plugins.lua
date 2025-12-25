@@ -1,0 +1,13 @@
+vim.pack.add({
+	"https://github.com/folke/tokyonight.nvim",
+	"https://github.com/neovim/nvim-lspconfig",
+	"https://github.com/nvim-lua/plenary.nvim",
+	"https://github.com/windwp/nvim-autopairs",
+	"https://github.com/nvim-telescope/telescope.nvim",
+	"https://github.com/nvim-treesitter/nvim-treesitter",
+	"https://github.com/folke/which-key.nvim",
+	"https://github.com/hrsh7th/nvim-cmp",
+	"https://github.com/hrsh7th/cmp-nvim-lsp",
+  	"https://github.com/hrsh7th/cmp-buffer",
+	"https://github.com/tpope/vim-fugitive",
+})

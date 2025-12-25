@@ -1,0 +1,89 @@
+{
+	"height": 30,
+	"spacing": 4,
+	"modules-left": [
+		"hyprland/workspaces",
+		"custom/sep",
+		"hyprland/window",
+		"custom/sep"
+	],
+	"modules-center": [],
+	"modules-right": [
+		"custom/sep",
+		"cpu",
+		"custom/sep",
+		"memory",
+		"custom/sep",
+		"pulseaudio",
+		"custom/sep",
+		"network",
+		"custom/sep",
+		"backlight",
+		"custom/sep",
+		"battery",
+		"custom/sep",
+		"clock",
+		"custom/sep",
+		"tray"
+	],
+	// Modules configuration
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": true,
+		"warp-on-scroll": false,
+		"format": "{name}"
+	},
+	"hyprland/window": {
+		"max-length": 40,
+		"separate-outputs": false
+	},
+	"keyboard-state": {
+		"numlock": true,
+		"capslock": true,
+		"format": "{name} {icon}",
+		"format-icons": {
+			"locked": "",
+			"unlocked": ""
+		}
+	},
+	"tray": {
+		"spacing": 10
+	},
+	"clock": {
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"format-alt": "{:%Y-%m-%d}"
+	},
+	"cpu": {
+		"format": "CPU {usage}%",
+		"tooltip": false
+	},
+	"memory": {
+		"format": "Mem: {used}GiB"
+	},
+	"backlight": {
+		"format": "Light: {percent}%"
+	},
+	"pulseaudio": {
+		"format": "Volume: {volume}%",
+		"format-muted": "Muted"
+	},
+	"battery": {
+		"states": {
+			"good": 65,
+			"warning": 50,
+			"critical": 20
+		},
+		"format": "Bat: {capacity}%",
+		"format-alt": "Bat: {capacity}% {icon} {time}",
+		"format-icons": ["", "", "", "", ""]
+	},
+	"network": {
+		"format": "Online",
+		"format-disconected": "Disconnected ()"
+	},
+	"custom/sep": {
+		"format": "|",
+		"interval": 0,
+		"tooltip": false
+	}
+}
