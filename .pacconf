@@ -19,11 +19,14 @@ keyd
 libpulse
 linux
 linux-firmware
+linux-headers
 linux-lts
 lua-language-server
 lvm2
 nano
 networkmanager
+nvidia-open
+nvidia-settings
 pipewire
 pipewire-alsa
 pipewire-jack
@@ -32,6 +35,7 @@ pyright
 qt5-wayland
 qt6-wayland
 qutebrowser
+reflector
 sof-firmware
 steam
 tlp
