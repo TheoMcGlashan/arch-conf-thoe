@@ -9,8 +9,11 @@ cmake
 discord
 dolphin
 efibootmgr
+firefox
+firewalld
 foot
 fzf
+gimp
 git
 github-cli
 gst-plugin-pipewire
@@ -18,6 +21,7 @@ hyprland
 hyprpaper
 intel-ucode
 keyd
+libnatpmp
 libpulse
 linux
 linux-firmware
@@ -31,10 +35,11 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 pyright
+qbittorrent
 qt5-wayland
 qt6-wayland
-qutebrowser
 steam
+systemd-resolvconf
 tlp
 ttf-jetbrains-mono-nerd
 vi
@@ -45,7 +50,6 @@ wofi
 xorg-xwayland
 yay
 yay-debug
-zathura
 zoxide
 zram-generator
 zsh
