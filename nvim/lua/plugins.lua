@@ -8,6 +8,8 @@ vim.pack.add({
 	"https://github.com/folke/which-key.nvim",
 	"https://github.com/hrsh7th/nvim-cmp",
 	"https://github.com/hrsh7th/cmp-nvim-lsp",
-  	"https://github.com/hrsh7th/cmp-buffer",
+ 	"https://github.com/hrsh7th/cmp-buffer",
 	"https://github.com/tpope/vim-fugitive",
+	"https://github.com/lervag/vimtex",
+	"https://github.com/L3MON4D3/LuaSnip",
 })

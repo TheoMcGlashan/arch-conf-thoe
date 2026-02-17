@@ -1,5 +1,6 @@
 local key = vim.keymap
-
+local ls = require("luasnip")
+ 
 -- telescope search files, grep, buffers, and help
 local builtin = require('telescope.builtin')
 key.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
@@ -20,3 +21,13 @@ key.set("i", "<C-Space>", "<C-x><C-o>")
 
 -- open file explorer
 key.set('n', '<leader>cd', ":Explore<CR>")
+
+key.set("i", "<C-K>", function() ls.expand() end, {silent = true})
+key.set({"i", "s"}, "<C-l>", function() ls.jump( 1) end, {silent = true})
+key.set({"i", "s"}, "<C-h>", function() ls.jump(-1) end, {silent = true})
+
+key.set({"i", "s"}, "<C-k>", function()
+	if ls.choice_active() then
+		ls.change_choice(1)
+	end
+end, {silent = true})
