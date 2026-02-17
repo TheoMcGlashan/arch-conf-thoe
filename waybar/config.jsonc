@@ -9,7 +9,6 @@
 	],
 	"modules-center": [],
 	"modules-right": [
-		"custom/sep",
 		"cpu",
 		"custom/sep",
 		"memory",
@@ -78,8 +77,10 @@
 		"format-icons": ["", "", "", "", ""]
 	},
 	"network": {
-		"format": "Online",
-		"format-disconected": "Disconnected ()"
+		"interface": "wlp3s0",
+		"format": "{ifname}",
+		"format-wifi": "{essid}: {signalStrength}%",
+		"format-disconnected": "Disconnected"
 	},
 	"custom/sep": {
 		"format": "|",
