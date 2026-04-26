@@ -48,4 +48,17 @@ vim.lsp.config("rust_analyzer", {
 		},
 	},
 })
-vim.lsp.enable({ "lua_ls", "pyright", "rust_analyzer" })
+vim.lsp.config("texlab", {
+    capabilities = capabilities,
+    settings = {
+        texlab = {
+            build = {
+                onSave = false,
+            },
+            chktex = {
+                onOpenAndSave = true,
+            },
+        },
+    },
+})
+vim.lsp.enable({ "lua_ls", "pyright", "rust_analyzer", "texlab" })

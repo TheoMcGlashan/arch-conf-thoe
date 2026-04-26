@@ -22,12 +22,12 @@ key.set("i", "<C-Space>", "<C-x><C-o>")
 -- open file explorer
 key.set('n', '<leader>cd', ":Explore<CR>")
 
-key.set("i", "<C-K>", function() ls.expand() end, {silent = true})
-key.set({"i", "s"}, "<C-l>", function() ls.jump( 1) end, {silent = true})
-key.set({"i", "s"}, "<C-h>", function() ls.jump(-1) end, {silent = true})
+vim.cmd[[
+" Use ctrl-l to expand and jump through snippets
+imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>' 
+smap <silent><expr> <Tab> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'
 
-key.set({"i", "s"}, "<C-k>", function()
-	if ls.choice_active() then
-		ls.change_choice(1)
-	end
-end, {silent = true})
+" Use ctrl-h to jump backwards through snippets
+imap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
+smap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
+]]
