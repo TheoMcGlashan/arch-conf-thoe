@@ -3,6 +3,8 @@
 
 # Except these folders
 !.gitignore
+!.zshrc
+!defaults.conf
 !yazi/
 !yazi/**
 !zathura/
