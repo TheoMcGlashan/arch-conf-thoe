@@ -1,0 +1,35 @@
+# Global Settings
+background-color=#1a1b26ff
+text-color=#c0cafcff
+border-color=#7aa2f7ff
+progress-color=#7aa2f7ff
+
+# Appearance
+font=monospace 12
+width=350
+height=110
+margin=10
+padding=10
+border-size=2
+border-radius=4
+icons=1
+max-icon-size=48
+ignore-timeout=0
+anchor=top-right
+markup=1
+
+# Grouping
+group-by=app-name
+
+## Default State
+[urgency=low]
+border-color=#565f89ff
+default-timeout=4000
+
+[urgency=normal]
+border-color=#7aa2f7ff
+default-timeout=8000
+
+[urgency=high]
+border-color=#f7768eff
+default-timeout=16000

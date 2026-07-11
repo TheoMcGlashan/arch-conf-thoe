@@ -1,0 +1,25 @@
+# Ignore everything
+*
+
+# Except these folders
+!.gitignore
+!yazi/
+!yazi/**
+!zathura/
+!zathura/**
+!yay/
+!yay/**
+!waybar/
+!waybar/**
+!systemd/
+!systemd/**
+!nvim/
+!nvim/**
+!niri/
+!niri/**
+!mako/
+!mako/**
+!fuzzel/
+!fuzzel/**
+!foot/
+!foot/**

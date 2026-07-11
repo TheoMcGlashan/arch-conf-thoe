@@ -1,0 +1,12 @@
+[Unit]
+Description=ProtonVPN Autoconnect
+After=network-online.target dbus.socket
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/protonvpn connect
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target
